@@ -10,4 +10,4 @@
 
 `Demo`
 
-![](/imgs/login.png)
+![](/imgs/demo.png)
