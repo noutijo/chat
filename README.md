@@ -11,7 +11,7 @@ Note that this project is designed with `JDK 1.8`.
 
 # How it works
 
-`First your have to lauch server`
+`First your have to launch server`
 
 To start the server, execute the `Launch.java` class in the `src/server` root.
 then define a port (for example : `2000`) and click on connection.
