@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.ClientController">
+   <children>
+      <TextArea fx:id="affichageClient" layoutY="196.0" prefHeight="142.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <JFXButton layoutX="570.0" layoutY="647.0" onMouseClicked="#envoyerClientCliquer" prefHeight="27.0" prefWidth="107.0" style="-fx-border-radius: 10px; -fx-background-color: #00aff0; -fx-background-radius: 10px;" text="Envoyer" textFill="WHITE" AnchorPane.bottomAnchor="28.0" AnchorPane.rightAnchor="26.0" />
+      <HBox alignment="CENTER" layoutX="48.0" layoutY="51.0" style="-fx-background-radius: 100px; -fx-border-color: #f1f1f1; -fx-border-radius: 100px; -fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/Customer_50px.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow color="#cdcdcd" height="12.1" radius="5.55" width="12.1" />
+         </effect>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <JFXTextField fx:id="portClient" focusColor="#00aff0" labelFloat="true" layoutX="276.0" layoutY="63.0" prefHeight="25.0" prefWidth="227.0" promptText="Port" text="1997" unFocusColor="#00aff0" />
+      <JFXTextField fx:id="adresseIPClient" focusColor="#00aff0" labelFloat="true" layoutX="276.0" layoutY="111.0" prefHeight="25.0" prefWidth="227.0" promptText="IP addresse" text="127.0.0.1" unFocusColor="#00aff0" />
+      <JFXButton layoutX="404.0" layoutY="158.0" onMouseClicked="#connexionClientCliquer" prefHeight="27.0" prefWidth="99.0" style="-fx-border-color: #00aff0; -fx-border-radius: 10px;" text="Connexion" textFill="#00aff0" />
+      <JFXTextField fx:id="messageClient" focusColor="#00aff0" labelFloat="true" layoutX="171.0" layoutY="590.0" prefHeight="25.0" prefWidth="505.0" promptText="Entrez votre message ici" unFocusColor="#00aff0" AnchorPane.bottomAnchor="87.0" AnchorPane.leftAnchor="171.0" AnchorPane.rightAnchor="27.0" />
+   </children>
+</AnchorPane>
